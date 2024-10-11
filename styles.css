@@ -1,24 +1,113 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #fff;
-  padding: 20px;
-  border: 1px solid #1d1d1d;
+  padding: 0px;
+  border: 0px solid #1d1d1d;
   font-family: "Poppins", sans-serif;
 }
 body header {
+  background: url("./img/top-view-blue-origami-paper-fan-plain-background_23-2148188402.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+body header .logo {
+  margin-bottom: 0.5rem;
+}
+body header .logo-name {
+  margin: 0 0 0 2;
+  z-index: 9;
+}
+body .greeting {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "EDPT" 100, "EHLT" 12;
+}
+body .center-top-5 {
   text-align: center;
 }
-body h1, body h2 {
+body .main-body {
+  padding: 0 10px;
+}
+body h1, body h2, body h3 {
   color: #0075c9;
-  font-size: 24px;
+}
+body .om-color {
+  color: #009c58;
+}
+body .discovery-color {
+  color: #b9875d;
+}
+body .hollard-color {
+  color: #f65725;
+}
+body .outsurance-color {
+  color: #7a378d;
 }
 body p {
   color: #1d1d1d;
   font-size: 16px;
 }
+body ul {
+  padding: 20px;
+}
 body img {
   max-width: 300px;
   margin: 20px 0;
+}
+body .presenter {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  z-index: 1;
+}
+body .presenter-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .presenter-image .sanlamRep {
+  border: solid 1px rgba(29, 29, 29, 0.1019607843);
+  border-radius: 50%;
+}
+body .sanlam-theme {
+  background: linear-gradient(90deg, rgba(0, 117, 201, 0.3137254902) 0%, rgba(0, 156, 88, 0) 100%);
+  padding: 20px;
+  border-radius: 15px;
+}
+body .om-theme {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 156, 88, 0.5882352941) 100%);
+  padding: 20px;
+  border-radius: 15px;
+}
+body .discovery-theme {
+  background: linear-gradient(90deg, rgba(185, 135, 93, 0.5882352941) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 20px;
+  border-radius: 15px;
+}
+body .hollard-theme {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(246, 87, 37, 0.5882352941) 100%);
+  padding: 20px;
+  border-radius: 15px;
+}
+body .outsurance-theme {
+  background: linear-gradient(90deg, rgba(122, 55, 141, 0.5882352941) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 20px;
+  border-radius: 15px;
 }
 body a {
   color: #0075c9;
@@ -26,6 +115,16 @@ body a {
 }
 body a:hover {
   text-decoration: underline;
+}
+body .hero-img {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+}
+body .flag-rsa {
+  position: absolute;
+  top: 79.5%;
+  left: 60%;
 }
 body .bottom-section {
   margin-top: 5rem;
@@ -38,10 +137,30 @@ body .bottom-section .banner-disclaimer {
   position: relative;
   background: #fff;
 }
-body .bottom-section .banner-disclaimer .presenter {
+body .bottom-section .banner-disclaimer .presenter-sanlam {
   position: absolute;
   bottom: 0;
-  left: 48%;
+  left: 32%;
+}
+body .bottom-section .banner-disclaimer .presenter-om {
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+}
+body .bottom-section .banner-disclaimer .presenter-discovery {
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+}
+body .bottom-section .banner-disclaimer .presenter-hollard {
+  position: absolute;
+  bottom: 0;
+  left: 32%;
+}
+body .bottom-section .banner-disclaimer .presenter-outsurance {
+  position: absolute;
+  bottom: 0;
+  left: 65%;
 }
 body .bottom-section .banner-disclaimer .disclaimer {
   font-size: 12px;
@@ -51,4 +170,13 @@ body .bottom-section .banner-disclaimer .disclaimer {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   background: rgba(255, 255, 255, 0.4);
+}
+body footer {
+  background: #343636;
+  text-align: center;
+  padding: 20px;
+  margin-top: 2rem;
+}
+body .footer-text {
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
