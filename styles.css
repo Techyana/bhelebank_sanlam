@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
@@ -17,28 +16,37 @@ body header {
   background-size: cover;
   background-position: center;
   text-align: center;
-  margin-bottom: 2rem;
 }
 body header .logo {
   margin-bottom: 0.5rem;
 }
-body header .logo-name {
-  margin: 0 0 0 2;
-  z-index: 9;
+body header .style-logo {
+  margin: 1rem 5rem;
+  padding: 0.5rem;
+  border: #304b73 solid 2px;
+  border-bottom: none;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6509803922) 30%, rgba(0, 156, 88, 0.3215686275) 100%);
 }
 body .greeting {
   text-align: center;
   margin-top: 6rem;
-  margin-bottom: 8rem;
-  font-family: "Nabla", system-ui;
-  font-optical-sizing: auto;
-  font-size: 3rem;
-  font-weight: 400;
+  margin-bottom: 6rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
   font-style: normal;
-  font-variation-settings: "EDPT" 100, "EHLT" 12;
+  color: #1d1d1d;
 }
 body .center-top-5 {
   text-align: center;
+}
+body .center-top-5 .headingBlackH3 {
+  color: #1d1d1d;
+  opacity: 0;
 }
 body .main-body {
   padding: 0 10px;
@@ -71,8 +79,8 @@ body img {
 }
 body .presenter {
   position: absolute;
-  top: 7%;
-  left: 50%;
+  top: 14.5%;
+  left: 75%;
   z-index: 1;
 }
 body .presenter-image {
@@ -89,15 +97,33 @@ body .sanlam-theme {
   padding: 20px;
   border-radius: 15px;
 }
+body .sanlamLogo {
+  background: linear-gradient(90deg, #ffffff 20%, rgba(0, 117, 201, 0) 50%);
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
 body .om-theme {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 156, 88, 0.5882352941) 100%);
   padding: 20px;
   border-radius: 15px;
 }
+body .oldMutualLogo {
+  background: linear-gradient(90deg, #ffffff 40%, rgba(0, 156, 88, 0) 50%);
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
 body .discovery-theme {
   background: linear-gradient(90deg, rgba(185, 135, 93, 0.5882352941) 0%, rgba(255, 255, 255, 0) 100%);
   padding: 20px;
   border-radius: 15px;
+}
+body .discoveryLogo {
+  background: linear-gradient(90deg, #ffffff 30%, rgba(185, 135, 93, 0) 50%);
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 body .hollard-theme {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(246, 87, 37, 0.5882352941) 100%);
@@ -118,13 +144,19 @@ body a:hover {
 }
 body .hero-img {
   position: absolute;
-  top: 70%;
+  top: 62%;
+  left: 0%;
+}
+body .curious-eyes {
+  position: absolute;
+  top: 29.8%;
   left: 35%;
+  transform: rotate(-180deg);
 }
 body .flag-rsa {
   position: absolute;
-  top: 79.5%;
-  left: 60%;
+  top: 63.8%;
+  left: 75%;
 }
 body .bottom-section {
   margin-top: 5rem;
@@ -139,28 +171,28 @@ body .bottom-section .banner-disclaimer {
 }
 body .bottom-section .banner-disclaimer .presenter-sanlam {
   position: absolute;
-  bottom: 0;
-  left: 32%;
+  top: -190%;
+  left: 45%;
 }
 body .bottom-section .banner-disclaimer .presenter-om {
   position: absolute;
   bottom: 0;
-  left: 38%;
+  left: 45%;
 }
 body .bottom-section .banner-disclaimer .presenter-discovery {
   position: absolute;
   bottom: 0;
-  left: 38%;
+  left: 42%;
 }
 body .bottom-section .banner-disclaimer .presenter-hollard {
   position: absolute;
   bottom: 0;
-  left: 32%;
+  left: 36%;
 }
 body .bottom-section .banner-disclaimer .presenter-outsurance {
   position: absolute;
   bottom: 0;
-  left: 65%;
+  left: 55%;
 }
 body .bottom-section .banner-disclaimer .disclaimer {
   font-size: 12px;

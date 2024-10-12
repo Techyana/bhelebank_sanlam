@@ -5,7 +5,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
@@ -20,34 +19,43 @@ body{
     background-size: cover;
     background-position: center;
     text-align: center;
-    margin-bottom: 2rem;
 
     .logo {
       margin-bottom: .5rem;
     }
 
-    .logo-name {
-      margin: 0 0 0 2;
-      z-index: 9;
+    .style-logo {
+      margin: 1rem 5rem;
+      padding: .5rem;
+      border: #304b73 solid 2px;
+      border-bottom: none;
+      border-top-right-radius: 25px;
+      border-top-left-radius: 25px;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      background: linear-gradient(90deg, #ffffffa6 30%, #009c5852 100%);
     }
  }
+ 
 
  .greeting {
-   text-align: center;
-   margin-top: 6rem;
-   margin-bottom: 8rem;
-   font-family: "Nabla", system-ui;
-  font-optical-sizing: auto;
-  font-size: 3rem;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "EDPT" 100,
-    "EHLT" 12;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #1d1d1d;
  }
 
  .center-top-5 {
     text-align: center;
+
+    .headingBlackH3{
+      color: #1d1d1d;
+      opacity: 0;
+    }
  }
 
  .main-body {
@@ -91,8 +99,8 @@ body{
 
   .presenter {
     position: absolute;
-    top: 7%;
-    left: 50%;
+    top: 14.5%;
+    left: 75%;
     z-index: 1;
   }
 
@@ -114,16 +122,37 @@ body{
     border-radius: 15px;
   }
 
+  .sanlamLogo {
+    background: linear-gradient(90deg, #ffffff 20%, #0075c900 50%);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
   .om-theme {
     background: linear-gradient(90deg, #ffffff00 0%, #009c5896 100%);
     padding: 20px;
     border-radius: 15px;
   }
 
+  .oldMutualLogo {
+    background: linear-gradient(90deg, #ffffff 40%, #009c5800 50%);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
   .discovery-theme {
     background: linear-gradient(90deg, #b9875d96 0%, #ffffff00 100%);
     padding: 20px;
     border-radius: 15px;
+  }
+
+  .discoveryLogo {
+    background: linear-gradient(90deg, #ffffff 30%, #b9875d00 50%);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
   .hollard-theme {
@@ -149,14 +178,21 @@ body{
 
   .hero-img {
     position: absolute;
-    top: 70%;
+    top: 62%;
+    left: 0%;
+  }
+
+  .curious-eyes {
+    position: absolute;
+    top: 29.8%;
     left: 35%;
+    transform: rotate(-180deg);
   }
 
   .flag-rsa {
     position: absolute;
-    top: 79.5%;
-    left: 60%;
+    top: 63.8%;
+    left: 75%;
   }
 
 
@@ -175,33 +211,34 @@ body{
 
     .presenter-sanlam {
       position: absolute;
-      bottom: 0;
-      left: 32%;
+      
+      top: -190%;
+      left: 45%;
       
     }
 
     .presenter-om {
       position: absolute;
       bottom: 0;
-      left: 38%;
+      left: 45%;
     }
 
     .presenter-discovery {
       position: absolute;
       bottom: 0;
-      left: 38%;
+      left: 42%;
     }
 
     .presenter-hollard {
       position: absolute;
       bottom: 0;
-      left: 32%;
+      left: 36%;
     }
 
     .presenter-outsurance {
       position: absolute;
       bottom: 0;
-      left: 65%;
+      left: 55%;
     }
 
   .disclaimer {
